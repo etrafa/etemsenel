@@ -1,8 +1,29 @@
+import { useEffect, useRef, useState } from "react";
+
 import projectRetina from "../../../assets/works/retina-2.png";
+import retinaVideo from "../../../assets/works/retina-new.mp4";
 
 const RetinaApp = () => {
+  const videoRef = useRef(null);
+  const [focus, setFocus] = useState(false);
+
+  const loop = () => {
+    videoRef.current.play();
+  };
+
+  const onEndedLoop = () => {
+    if (focus) loop();
+  };
+
+  useEffect(() => {
+    if (focus) loop();
+    else {
+      videoRef.current.pause();
+    }
+  }, [focus]);
+
   return (
-    <div className="w-11/12 bg-white mt-12 mx-auto rounded-small">
+    <div className="w-11/12 lg:w-8/12 bg-white mt-12 mx-auto rounded-small">
       <h4 className="font-overpass text-main-header-color font-black text-4xl text-center pt-6">
         Retina
       </h4>
@@ -27,10 +48,20 @@ const RetinaApp = () => {
         </li>
       </ul>
       <img
-        className="w-11/12 mx-auto my-6 rounded-extraSm"
+        className="w-11/12 mx-auto my-6 rounded-extraSm lg:hidden"
         src={projectRetina}
         alt="retina preview"
       />
+      <video
+        className="hidden lg:block w-11/12 mx-auto my-6 rounded-extraSm hover:scale-125"
+        ref={videoRef}
+        onMouseOver={() => setFocus(true)}
+        onMouseOut={() => setFocus(false)}
+        loop={true}
+        muted={true}
+        onEnded={onEndedLoop}
+        src={retinaVideo}
+      ></video>
       <p className="font-overpass px-5 leading-34 font-normal">
         I created a gallery app which allows users to be able to search keywords
         and find thousands of pictures, save them to their account and remove
@@ -47,7 +78,6 @@ const RetinaApp = () => {
           View Demo
         </button>
       </div>
-      <video className="hidden" src="works/crypto-new.mp4"></video>
     </div>
   );
 };
