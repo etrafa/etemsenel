@@ -1,0 +1,17 @@
+.developer-name {
+  font-size: 16vw;
+  line-height: 6rem;
+}
+
+@media screen and (min-width: 600px) {
+  .developer-name {
+    font-size: 12vw;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .developer-name {
+    font-size: 6vw;
+    line-height: normal;
+  }
+}

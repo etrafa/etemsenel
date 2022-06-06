@@ -11,15 +11,15 @@ import skillNpm from "../../assets/skills/npm.svg";
 
 const Skills = ({ page }) => {
   return page === 3 ? (
-    <section className="pt-12">
-      <h3 className="text-5xl md:text-6xl font-bold text-center font-metro text-main-pink-color">
-        Skills
+    <section className="pt-24">
+      <h3 className="text-3xl font-bold text-center font-metro text-main-pink-color">
+        SKILLS
       </h3>
-      <picture className="mt-12 max-w-screen-lg mx-auto grid grid-cols-2 lg:grid-cols-4 gap-y-12 items-center">
-        <img className="w-32 h-32 mx-auto" src={skillHtml} alt="html icon" />
-        <img className="w-32 h-32 mx-auto" src={skillCss} alt="css icon" />
+      <picture className="mt-12 max-w-screen-lg mx-auto grid grid-cols-2 lg:grid-cols-5 gap-y-12 items-center">
+        <img className="w-24 h-24 mx-auto" src={skillHtml} alt="html icon" />
+        <img className="w-24 h-24 mx-auto" src={skillCss} alt="css icon" />
         <img
-          className="w-32 h-32 mx-auto"
+          className="w-24 h-24 mx-auto"
           src={skillJavascript}
           alt="javascript icon"
         />
@@ -28,24 +28,24 @@ const Skills = ({ page }) => {
           src={skillBootstrap}
           alt="bootstrap icon"
         />
-        <img className="w-32 h-32 mx-auto" src={skillReact} alt="react icon" />
+        <img className="w-24 h-24 mx-auto" src={skillReact} alt="react icon" />
         <img
-          className="w-32 h-20 mx-auto"
+          className="w-24 h-24 mx-auto"
           src={skillTailwind}
           alt="tailwind icon"
         />
         <img
-          className="w-32 h-32 mx-auto"
+          className="w-24 h-24 mx-auto"
           src={skillNextJS}
           alt="nextJS icon"
         />
         <img
-          className="w-32 h-32 mx-auto"
+          className="w-24 h-24 mx-auto"
           src={skillFirebase}
           alt="firebase icon"
         />
-        <img className="w-32 h-32 mx-auto" src={skillGit} alt="git icon" />
-        <img className="w-32 h-32 mx-auto" src={skillNpm} alt="npm icon" />
+        <img className="w-24 h-24 mx-auto" src={skillGit} alt="git icon" />
+        <img className="w-24 h-24 mx-auto" src={skillNpm} alt="npm icon" />
       </picture>
     </section>
   ) : null;

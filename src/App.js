@@ -25,7 +25,7 @@ function App() {
     <main className="app">
       <Navbar page={page} setPage={setPage} />
       <Arrows page={page} setPage={setPage} />
-      {/* <img
+      <img
         className="absolute w-28 bottom-0 left-20 balloon"
         src={Balloon}
         alt="balloon"
@@ -34,7 +34,7 @@ function App() {
         className="absolute w-28 bottom-0 right-20 balloon"
         src={Balloon}
         alt="balloon"
-      /> */}
+      />
       <HomePage page={page} />
       <AboutMe page={page} />
       <Skills page={page} />

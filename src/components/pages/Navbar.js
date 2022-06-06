@@ -1,16 +1,106 @@
+import { useState } from "react";
+
 const Navbar = ({ page, setPage }) => {
+  const [navbarOpen, setNavbarOpen] = useState(false);
+
   return (
-    <nav className="flex justify-between mx-10 pt-4 ">
+    <nav className="flex justify-between mx-10 pt-4">
       <div onClick={() => setPage(1)}>
         <h4 className="font-bungee text-4xl cursor-pointer text-white hover:text-main-pink-color">
           ES
         </h4>
       </div>
-      <div className="lg:hidden">
+      {navbarOpen && (
+        <div className="w-full flex bg-black fixed top-0 left-0 justify-center">
+          <svg
+            onClick={() => setNavbarOpen(false)}
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-8 w-8 text-white absolute right-4 top-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+          <ul className="flex flex-col h-screen justify-evenly">
+            <li>
+              <div
+                onClick={() => {
+                  setPage(1);
+                  setNavbarOpen(false);
+                }}
+              >
+                <h4 className="font-bungee text-4xl cursor-pointer text-main-pink-color  text-center">
+                  ES
+                </h4>
+              </div>
+            </li>
+            <li
+              text-4xl
+              onClick={() => {
+                setPage(2);
+                setNavbarOpen(false);
+              }}
+              className={
+                page === 2
+                  ? "mx-6 text-main-yellow-color hover:text-main-pink-color font-bold cursor-pointer text-4xl"
+                  : "mx-6 text-white hover:text-main-pink-color font-bold cursor-pointer text-4xl"
+              }
+            >
+              About
+            </li>
+            <li
+              onClick={() => {
+                setPage(3);
+                setNavbarOpen(false);
+              }}
+              className={
+                page === 3
+                  ? "mx-6 text-main-yellow-color hover:text-main-pink-color font-bold cursor-pointer text-4xl"
+                  : "mx-6 text-white hover:text-main-pink-color font-bold cursor-pointer text-4xl"
+              }
+            >
+              Skills
+            </li>
+            <li
+              onClick={() => {
+                setPage(4);
+                setNavbarOpen(false);
+              }}
+              className={
+                page === 4
+                  ? "mx-6 text-main-yellow-color hover:text-main-pink-color font-bold cursor-pointer text-4xl"
+                  : "mx-6 text-white hover:text-main-pink-color font-bold cursor-pointer text-4xl"
+              }
+            >
+              Projects
+            </li>
+            <li
+              onClick={() => {
+                setPage(5);
+                setNavbarOpen(false);
+              }}
+              className={
+                page === 5
+                  ? "mx-6 text-main-yellow-color hover:text-main-pink-color font-bold cursor-pointer text-4xl"
+                  : "mx-6 text-white hover:text-main-pink-color font-bold cursor-pointer text-4xl"
+              }
+            >
+              Contact
+            </li>
+          </ul>
+        </div>
+      )}
+      <div className="lg:hidden text-white cursor-pointer hover:text-main-pink-color">
         <svg
+          onClick={() => setNavbarOpen(true)}
           xmlns="http://www.w3.org/2000/svg"
           className="h-10 w-10"
-          fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
           strokeWidth={2}
@@ -69,26 +159,3 @@ const Navbar = ({ page, setPage }) => {
 };
 
 export default Navbar;
-
-{
-  /* <nav className="flex justify-end items-center h-12 pt-10 list-none font-overpass font-black pr-16 text-white">
-      <NavLink to="/about">
-        <li className="px-16 text-2xl cursor-pointer hover:text-main-pink-color hover:underline">
-          about
-        </li>
-      </NavLink>
-      <NavLink to="/skills">
-        <li className="px-16 text-2xl cursor-pointer hover:text-main-pink-color hover:underline">
-          skills
-        </li>
-      </NavLink>
-      <li className="px-16 text-2xl cursor-pointer hover:text-main-pink-color hover:underline">
-        projects
-      </li>
-      <NavLink to="/contact">
-        <li className="px-16 text-2xl cursor-pointer hover:text-main-pink-color hover:underline">
-          contact
-        </li>
-      </NavLink>
-    </nav> */
-}
