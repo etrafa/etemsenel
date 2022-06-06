@@ -9,6 +9,7 @@ import AboutMe from "./components/pages/AboutMe";
 import Projects from "./components/pages/Projects";
 import { useState } from "react";
 import Arrows from "./components/Utilities/Arrows";
+import Balloon from "./assets/balloon.png";
 
 function App() {
   const [page, setPage] = useState(1);
@@ -24,6 +25,16 @@ function App() {
     <main className="app">
       <Navbar page={page} setPage={setPage} />
       <Arrows page={page} setPage={setPage} />
+      {/* <img
+        className="absolute w-28 bottom-0 left-20 balloon"
+        src={Balloon}
+        alt="balloon"
+      />
+      <img
+        className="absolute w-28 bottom-0 right-20 balloon"
+        src={Balloon}
+        alt="balloon"
+      /> */}
       <HomePage page={page} />
       <AboutMe page={page} />
       <Skills page={page} />

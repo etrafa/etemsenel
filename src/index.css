@@ -26,4 +26,35 @@
   background-repeat: no-repeat;
   background-position: center right;
   position: relative;
+  z-index: 9999999;
+}
+
+.balloon {
+  animation: ballonAnimation 40s linear infinite;
+  animation-fill-mode: forwards;
+  z-index: -1;
+}
+.balloon2 {
+  animation: ballonAnimation2 40s linear infinite;
+  animation-fill-mode: forwards;
+  animation-delay: 12s;
+}
+
+@keyframes ballonAnimation {
+  from {
+    bottom: 0%;
+  }
+  to {
+    bottom: 100%;
+  }
+}
+@keyframes ballonAnimation2 {
+  from {
+    bottom: 0%;
+    left: 10%;
+  }
+  to {
+    bottom: 100%;
+    left: 40%;
+  }
 }

@@ -47,7 +47,7 @@ const SpinGame = () => {
         alt="spin-answer project preview"
       />
       <video
-        className="hidden lg:block w-11/12 mx-auto my-6 rounded-extraSm hover:scale-125"
+        className="hidden lg:block w-11/12 mx-auto my-6 rounded-extraSm hover:scale-125 mt-28"
         ref={videoRef}
         onMouseOver={() => setFocus(true)}
         onMouseOut={() => setFocus(false)}

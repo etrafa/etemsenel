@@ -1,6 +1,6 @@
-const Arrows = ({ page, setPage, prevText, nextText }) => {
+const Arrows = ({ page, setPage }) => {
   return (
-    <div className="absolute w-full hidden lg:block top-1/2">
+    <div className="sticky w-full hidden lg:block top-1/2">
       <div className="group">
         <svg
           onClick={() => {
