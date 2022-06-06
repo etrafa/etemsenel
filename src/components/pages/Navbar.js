@@ -1,8 +1,10 @@
-const Navbar = ({ setPage }) => {
+const Navbar = ({ page, setPage }) => {
   return (
     <nav className="flex justify-between mx-10 pt-4 ">
       <div onClick={() => setPage(1)}>
-        <h4 className="font-bungee text-4xl cursor-pointer text-white">ES</h4>
+        <h4 className="font-bungee text-4xl cursor-pointer text-white hover:text-main-pink-color">
+          ES
+        </h4>
       </div>
       <div className="lg:hidden">
         <svg
@@ -23,25 +25,41 @@ const Navbar = ({ setPage }) => {
       <ul className="hidden lg:flex">
         <li
           onClick={() => setPage(2)}
-          className="mx-6 text-white font-bold cursor-pointer"
+          className={
+            page === 2
+              ? "mx-6 text-main-yellow-color hover:text-main-pink-color font-bold cursor-pointer"
+              : "mx-6 text-white hover:text-main-pink-color font-bold cursor-pointer"
+          }
         >
           About
         </li>
         <li
           onClick={() => setPage(3)}
-          className="mx-6 text-white font-bold cursor-pointer"
+          className={
+            page === 3
+              ? "mx-6 text-main-yellow-color hover:text-main-pink-color font-bold cursor-pointer"
+              : "mx-6 text-white hover:text-main-pink-color font-bold cursor-pointer"
+          }
         >
           Skills
         </li>
         <li
           onClick={() => setPage(4)}
-          className="mx-6 text-white font-bold cursor-pointer"
+          className={
+            page === 4
+              ? "mx-6 text-main-yellow-color hover:text-main-pink-color font-bold cursor-pointer"
+              : "mx-6 text-white hover:text-main-pink-color font-bold cursor-pointer"
+          }
         >
           Projects
         </li>
         <li
           onClick={() => setPage(5)}
-          className="mx-6 text-white font-bold cursor-pointer"
+          className={
+            page === 5
+              ? "mx-6 text-main-yellow-color hover:text-main-pink-color font-bold cursor-pointer"
+              : "mx-6 text-white hover:text-main-pink-color font-bold cursor-pointer"
+          }
         >
           Contact
         </li>

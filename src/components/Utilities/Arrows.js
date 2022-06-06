@@ -6,7 +6,11 @@ const Arrows = ({ page, setPage, prevText, nextText }) => {
           onClick={() => {
             setPage(page - 1);
           }}
-          className="w-14 h-14 cursor-pointer fill-white hover:fill-black absolute top-1/2 transform left-4 -translate-y-1/2"
+          className={
+            page === 1
+              ? "w-14 h-14 cursor-pointer fill-white hover:fill-black absolute top-1/2 transform left-4 -translate-y-1/2"
+              : "w-14 h-14 cursor-pointer fill-white hover:fill-main-pink-color absolute top-1/2 transform left-4 -translate-y-1/2"
+          }
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 256 512"
         >
@@ -25,7 +29,11 @@ const Arrows = ({ page, setPage, prevText, nextText }) => {
           onClick={() => {
             setPage(page + 1);
           }}
-          className="w-14 h-14 cursor-pointer fill-white hover:fill-black absolute  transform right-8 -translate-y-1/2"
+          className={
+            page === 1
+              ? "w-14 h-14 cursor-pointer fill-white hover:fill-black absolute  transform right-8 -translate-y-1/2"
+              : "w-14 h-14 cursor-pointer fill-white hover:fill-main-pink-color absolute  transform right-8 -translate-y-1/2"
+          }
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 256 512"
         >

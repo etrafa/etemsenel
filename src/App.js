@@ -12,8 +12,7 @@ import Arrows from "./components/Utilities/Arrows";
 
 function App() {
   const [page, setPage] = useState(1);
-  const [prevText, setPrevText] = useState("");
-  const [nextText, setNextText] = useState("");
+
   if (page > 5) {
     setPage(1);
   }
@@ -23,34 +22,13 @@ function App() {
 
   return (
     <main className="app">
-      <Navbar setPage={setPage} />
-      <Arrows
-        page={page}
-        setPage={setPage}
-        prevText={prevText}
-        nextText={nextText}
-      />
-      <HomePage
-        page={page}
-        setPrevText={setPrevText}
-        setNextText={setNextText}
-      />
-      <AboutMe
-        page={page}
-        setPrevText={setPrevText}
-        setNextText={setNextText}
-      />
-      <Skills page={page} setPrevText={setPrevText} setNextText={setNextText} />
-      <Projects
-        page={page}
-        setPrevText={setPrevText}
-        setNextText={setNextText}
-      />
-      <Contact
-        page={page}
-        setPrevText={setPrevText}
-        setNextText={setNextText}
-      />
+      <Navbar page={page} setPage={setPage} />
+      <Arrows page={page} setPage={setPage} />
+      <HomePage page={page} />
+      <AboutMe page={page} />
+      <Skills page={page} />
+      <Projects page={page} />
+      <Contact page={page} />
     </main>
   );
 }
