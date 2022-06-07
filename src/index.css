@@ -37,7 +37,8 @@
 .balloon2 {
   animation: ballonAnimation2 40s linear infinite;
   animation-fill-mode: forwards;
-  animation-delay: 12s;
+  animation-delay: 4;
+  z-index: -1;
 }
 
 @keyframes ballonAnimation {

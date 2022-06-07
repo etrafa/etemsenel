@@ -19,8 +19,8 @@ const Arrows = ({ page, setPage }) => {
         <span
           className={
             page === 1
-              ? "hidden group-hover:block absolute text-white group-hover:text-black top-1/2 transform left-20 -translate-y-1/2 font-bold text-lg"
-              : "hidden group-hover:block absolute group-hover:text-white top-1/2 transform left-20 -translate-y-1/2 font-bold text-lg"
+              ? "hidden group-hover:block absolute group-hover:animate-textAnimationLeftArrow text-white group-hover:text-black top-1/2 transform left-20 -translate-y-1/2 font-bold text-lg"
+              : "hidden group-hover:block absolute group-hover:animate-textAnimationLeftArrow group-hover:text-white top-1/2 transform left-20 -translate-y-1/2 font-bold text-lg"
           }
         >
           {page === 1 && "Contact"}
@@ -48,8 +48,8 @@ const Arrows = ({ page, setPage }) => {
         <span
           className={
             page === 1
-              ? "hidden group-hover:block absolute text-white group-hover:text-black top-1/2 transform right-24 -translate-y-1/2 font-bold text-lg"
-              : "hidden group-hover:block absolute group-hover:text-white top-1/2 transform right-24 -translate-y-1/2 font-bold text-lg"
+              ? "hidden group-hover:block absolute group-hover:animate-textAnimationRightArrow text-white group-hover:text-black top-1/2 transform right-24 -translate-y-1/2 font-bold text-lg"
+              : "hidden group-hover:block absolute group-hover:animate-textAnimationRightArrow group-hover:text-white top-1/2 transform right-24 -translate-y-1/2 font-bold text-lg"
           }
         >
           {page === 1 && "About"}

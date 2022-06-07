@@ -34,6 +34,20 @@ module.exports = {
         "main-header-color": "#282f3a",
         "main-yellow-color": "#ffff00",
       },
+      keyframes: {
+        textAnimationRightArrow: {
+          "0%": { right: "0px" },
+          "100%": { right: "90px" },
+        },
+        textAnimationLeftArrow: {
+          "0%": { left: "0px" },
+          "100%": { left: "90px" },
+        },
+      },
+      animation: {
+        textAnimationRightArrow: "textAnimationRightArrow 0.5s forwards",
+        textAnimationLeftArrow: "textAnimationLeftArrow 0.5s forwards",
+      },
     },
   },
   plugins: [],
