@@ -1,6 +1,6 @@
 const Contact = ({ page }) => {
   return page === 5 ? (
-    <section className="py-12">
+    <section className="py-12 lg:h-[calc(100vh_-_56px)] lg:flex lg:flex-col lg:justify-center lg:items-center lg:pb-40">
       <h3 className="text-3xl font-bold text-center font-metro text-main-pink-color">
         Contact
       </h3>
@@ -25,6 +25,7 @@ const Contact = ({ page }) => {
           Send
         </button>
       </form>
+      <div></div>
     </section>
   ) : null;
 };

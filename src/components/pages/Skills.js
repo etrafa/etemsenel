@@ -11,11 +11,11 @@ import skillNpm from "../../assets/skills/npm.svg";
 
 const Skills = ({ page }) => {
   return page === 3 ? (
-    <section className="pt-24">
+    <section className="py-12 lg:h-[calc(100vh_-_56px)] lg:flex lg:flex-col lg:justify-center lg:items-center lg:pb-40">
       <h3 className="text-3xl font-bold text-center font-metro text-main-pink-color">
         SKILLS
       </h3>
-      <picture className="mt-12 max-w-screen-lg mx-auto grid grid-cols-2 lg:grid-cols-5 gap-y-12 items-center">
+      <picture className="mt-12 max-w-screen-lg mx-auto grid grid-cols-2 lg:grid-cols-5 gap-y-12 lg:gap-24 items-center">
         <img className="w-24 h-24 mx-auto" src={skillHtml} alt="html icon" />
         <img className="w-24 h-24 mx-auto" src={skillCss} alt="css icon" />
         <img
@@ -47,6 +47,7 @@ const Skills = ({ page }) => {
         <img className="w-24 h-24 mx-auto" src={skillGit} alt="git icon" />
         <img className="w-24 h-24 mx-auto" src={skillNpm} alt="npm icon" />
       </picture>
+      <div></div>
     </section>
   ) : null;
 };

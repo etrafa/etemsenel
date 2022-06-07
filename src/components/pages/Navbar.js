@@ -117,7 +117,7 @@ const Navbar = ({ page, setPage }) => {
           onClick={() => setPage(2)}
           className={
             page === 2
-              ? "mx-6 text-main-yellow-color hover:text-main-pink-color font-bold cursor-pointer"
+              ? "mx-6 text-main-yellow-color font-bold cursor-pointer"
               : "mx-6 text-white hover:text-main-pink-color font-bold cursor-pointer"
           }
         >
@@ -127,7 +127,7 @@ const Navbar = ({ page, setPage }) => {
           onClick={() => setPage(3)}
           className={
             page === 3
-              ? "mx-6 text-main-yellow-color hover:text-main-pink-color font-bold cursor-pointer"
+              ? "mx-6 text-main-yellow-color  font-bold cursor-pointer"
               : "mx-6 text-white hover:text-main-pink-color font-bold cursor-pointer"
           }
         >
@@ -137,7 +137,7 @@ const Navbar = ({ page, setPage }) => {
           onClick={() => setPage(4)}
           className={
             page === 4
-              ? "mx-6 text-main-yellow-color hover:text-main-pink-color font-bold cursor-pointer"
+              ? "mx-6 text-main-yellow-color  font-bold cursor-pointer"
               : "mx-6 text-white hover:text-main-pink-color font-bold cursor-pointer"
           }
         >
@@ -147,7 +147,7 @@ const Navbar = ({ page, setPage }) => {
           onClick={() => setPage(5)}
           className={
             page === 5
-              ? "mx-6 text-main-yellow-color hover:text-main-pink-color font-bold cursor-pointer"
+              ? "mx-6 text-main-yellow-color font-bold cursor-pointer"
               : "mx-6 text-white hover:text-main-pink-color font-bold cursor-pointer"
           }
         >
