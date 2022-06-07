@@ -1,16 +1,43 @@
 import "./HomePage.css";
+import { Animated } from "react-animated-css";
 
 const HomePage = ({ page }) => {
-  return page === 1 ? (
-    <div className="flex w-full flex-col justify-center items-centers h-[calc(100vh_-_56px)]">
-      <h1 className="font-metro text-main-pink-color text-8xl developer-name text-center lg:mb-8">
-        Etem Senel
-      </h1>
-      <h4 className="text-center font-permanent text-white font-bold text-4xl lg:mb-8">
-        Front-End Developer
-      </h4>
+  return (
+    <div>
+      {page === 1 && (
+        <Animated
+          animationIn="fadeIn"
+          animationInDuration={4000}
+          className="flex w-full flex-col justify-center items-centers h-[calc(100vh_-_56px)]"
+        >
+          <div>
+            <h1 className="font-metro text-main-pink-color text-8xl developer-name text-center lg:mb-8">
+              Etem Senel
+            </h1>
+            <h4 className="text-center font-permanent text-white font-bold text-4xl lg:mb-8">
+              Front-End Developer
+            </h4>
+          </div>
+        </Animated>
+      )}
+      {page === 2 && (
+        <Animated
+          animationIn="fadeOut"
+          animationInDuration={4000}
+          className="flex w-full flex-col justify-center items-centers h-[calc(100vh_-_56px)]"
+        >
+          <div>
+            <h1 className="font-metro text-main-pink-color text-8xl developer-name text-center lg:mb-8">
+              Etem Senel
+            </h1>
+            <h4 className="text-center font-permanent text-white font-bold text-4xl lg:mb-8">
+              Front-End Developer
+            </h4>
+          </div>
+        </Animated>
+      )}
     </div>
-  ) : null;
+  );
 };
 
 export default HomePage;

@@ -1,11 +1,22 @@
 const Arrows = ({ page, setPage }) => {
+  const prevPageHandler = () => {
+    setPage(page - 1);
+  };
+
+  const nextPageHandler = () => {
+    console.log(page);
+    setPage((prev) => prev + 1);
+    setTimeout(() => {
+      setPage((prev) => prev + 1);
+      console.log(page);
+    }, 3000);
+  };
+
   return (
-    <div className="sticky w-full hidden lg:block top-1/2">
+    <div className="sticky w-full hidden lg:block top-1/2 z-50">
       <div className="group">
         <svg
-          onClick={() => {
-            setPage(page - 1);
-          }}
+          onClick={prevPageHandler}
           className={
             page === 1
               ? "w-14 h-14 cursor-pointer fill-white hover:fill-black absolute top-1/2 transform left-4 -translate-y-1/2"
@@ -32,9 +43,7 @@ const Arrows = ({ page, setPage }) => {
       </div>
       <div className="group">
         <svg
-          onClick={() => {
-            setPage(page + 1);
-          }}
+          onClick={nextPageHandler}
           className={
             page === 1
               ? "w-14 h-14 cursor-pointer fill-white hover:fill-black absolute  transform right-8 -translate-y-1/2"

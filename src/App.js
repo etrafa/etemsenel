@@ -14,12 +14,14 @@ import Balloon from "./assets/balloon.png";
 function App() {
   const [page, setPage] = useState(1);
 
-  if (page > 5) {
+  if (page > 10) {
     setPage(1);
   }
   if (page < 1) {
-    setPage(5);
+    setPage(50);
   }
+
+  console.log(page);
 
   return (
     <main className="app">
