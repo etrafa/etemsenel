@@ -1,24 +1,30 @@
 {
   "files": {
-    "main.css": "/etemsenel/static/css/main.dba982e5.css",
-    "main.js": "/etemsenel/static/js/main.41979992.js",
+    "main.css": "/etemsenel/static/css/main.f3b35a7f.css",
+    "main.js": "/etemsenel/static/js/main.f346c3bd.js",
+    "static/media/retina-new.mp4": "/etemsenel/static/media/retina-new.183eba6082b90c3b9fb5.mp4",
+    "static/media/tshirt-new.mp4": "/etemsenel/static/media/tshirt-new.f9f3f30a3c95d3d32d7a.mp4",
+    "static/media/crypto-new.mp4": "/etemsenel/static/media/crypto-new.7e0ed87181bb8ba090e4.mp4",
+    "static/media/spin-trivia-new.mp4": "/etemsenel/static/media/spin-trivia-new.8fa998a8fe8aca523d9b.mp4",
     "static/media/retina-2.png": "/etemsenel/static/media/retina-2.a7bfaf561ff0ed2f15dd.png",
     "static/media/tshirt-2.png": "/etemsenel/static/media/tshirt-2.f30776a3514d03db1f9f.png",
     "static/media/spin-2.png": "/etemsenel/static/media/spin-2.62941fc7a786805eca10.png",
     "static/media/crypto-5.png": "/etemsenel/static/media/crypto-5.a45b7300bc3bd3322e4f.png",
     "static/media/Metro.otf": "/etemsenel/static/media/Metro.b43f51dee068dbb39efb.otf",
     "static/media/background.png": "/etemsenel/static/media/background.e34e13c2f1beba6e59ba.png",
+    "static/media/etemsenel-cv.pdf": "/etemsenel/static/media/etemsenel-cv.3c8c5e2de9d6517823e5.pdf",
+    "static/media/balloon.png": "/etemsenel/static/media/balloon.a6a010036a0233538ef0.png",
     "static/media/boostrap.svg": "/etemsenel/static/media/boostrap.feff257efe1ae07f5d32657c6cd24605.svg",
     "static/media/react.svg": "/etemsenel/static/media/react.7c8375868df8c536ab4f2d4078519904.svg",
     "static/media/firebase.svg": "/etemsenel/static/media/firebase.78c5aa0c6c7850484a86c44b87edb341.svg",
     "static/media/javascript.svg": "/etemsenel/static/media/javascript.4c1b5332c1b1057928f6f06cf972c91c.svg",
     "index.html": "/etemsenel/index.html",
     "static/media/npm.svg": "/etemsenel/static/media/npm.87689eab730642c86d2b01f3ef4a19e3.svg",
-    "main.dba982e5.css.map": "/etemsenel/static/css/main.dba982e5.css.map",
-    "main.41979992.js.map": "/etemsenel/static/js/main.41979992.js.map"
+    "main.f3b35a7f.css.map": "/etemsenel/static/css/main.f3b35a7f.css.map",
+    "main.f346c3bd.js.map": "/etemsenel/static/js/main.f346c3bd.js.map"
   },
   "entrypoints": [
-    "static/css/main.dba982e5.css",
-    "static/js/main.41979992.js"
+    "static/css/main.f3b35a7f.css",
+    "static/js/main.f346c3bd.js"
   ]
 }
