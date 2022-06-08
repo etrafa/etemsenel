@@ -38,7 +38,7 @@
   min-height: 100vh;
   position: relative;
   z-index: 9999999;
-  animation: backgroundDarken 3s linear forwards;
+  animation: backgroundDarken 0.6s linear forwards;
 }
 
 @keyframes backgroundDarken {

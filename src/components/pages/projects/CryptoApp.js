@@ -65,7 +65,9 @@ const CryptoApp = () => {
         their cryptocurrency price history with a range of 24 hours and 3 years.
         I then deployed my website on Github.
       </p>
-      <div className="flex justify-evenly mt-6">
+      <br className="hidden lg:block mb-2" />
+      <br className="hidden lg:block mb-2" />
+      <div className="flex justify-evenly mt-6 lg:mt-5">
         <button className="w-34 h-10 mb-6 bg-black text-white font-bold font-overpass text-sm text-center">
           Source Code
         </button>

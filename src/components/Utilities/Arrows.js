@@ -1,14 +1,12 @@
 const Arrows = ({ page, setPage }) => {
   const prevPageHandler = () => {
-    setPage(page - 1);
+    setPage((prev) => prev - 2);
   };
 
   const nextPageHandler = () => {
-    console.log(page);
     setPage((prev) => prev + 1);
     setTimeout(() => {
       setPage((prev) => prev + 1);
-      console.log(page);
     }, 3000);
   };
 
@@ -35,10 +33,10 @@ const Arrows = ({ page, setPage }) => {
           }
         >
           {page === 1 && "Contact"}
-          {page === 2 && "Home"}
-          {page === 3 && "About"}
-          {page === 4 && "Skills"}
-          {page === 5 && "Projects"}
+          {page === 3 && "Home"}
+          {page === 5 && "About"}
+          {page === 7 && "Skills"}
+          {page === 9 && "Projects"}
         </span>
       </div>
       <div className="group">
@@ -62,10 +60,10 @@ const Arrows = ({ page, setPage }) => {
           }
         >
           {page === 1 && "About"}
-          {page === 2 && "Skills"}
-          {page === 3 && "Projects"}
-          {page === 4 && "Contact"}
-          {page === 5 && "Home"}
+          {page === 3 && "Skills"}
+          {page === 5 && "Projects"}
+          {page === 7 && "Contact"}
+          {page === 9 && "Home"}
         </span>
       </div>
     </div>

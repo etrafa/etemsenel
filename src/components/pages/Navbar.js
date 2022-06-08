@@ -114,9 +114,9 @@ const Navbar = ({ page, setPage }) => {
       </div>
       <ul className="hidden lg:flex">
         <li
-          onClick={() => setPage(2)}
+          onClick={() => setPage(3)}
           className={
-            page === 2
+            page === 3
               ? "mx-6 text-main-yellow-color font-bold cursor-pointer"
               : "mx-6 text-white hover:text-main-pink-color font-bold cursor-pointer"
           }
@@ -124,9 +124,9 @@ const Navbar = ({ page, setPage }) => {
           About
         </li>
         <li
-          onClick={() => setPage(3)}
+          onClick={() => setPage(5)}
           className={
-            page === 3
+            page === 5
               ? "mx-6 text-main-yellow-color  font-bold cursor-pointer"
               : "mx-6 text-white hover:text-main-pink-color font-bold cursor-pointer"
           }
@@ -134,9 +134,9 @@ const Navbar = ({ page, setPage }) => {
           Skills
         </li>
         <li
-          onClick={() => setPage(4)}
+          onClick={() => setPage(7)}
           className={
-            page === 4
+            page === 7
               ? "mx-6 text-main-yellow-color  font-bold cursor-pointer"
               : "mx-6 text-white hover:text-main-pink-color font-bold cursor-pointer"
           }
@@ -144,9 +144,9 @@ const Navbar = ({ page, setPage }) => {
           Projects
         </li>
         <li
-          onClick={() => setPage(5)}
+          onClick={() => setPage(9)}
           className={
-            page === 5
+            page === 9
               ? "mx-6 text-main-yellow-color font-bold cursor-pointer"
               : "mx-6 text-white hover:text-main-pink-color font-bold cursor-pointer"
           }

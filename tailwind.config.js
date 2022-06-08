@@ -43,10 +43,15 @@ module.exports = {
           "0%": { left: "0px" },
           "100%": { left: "90px" },
         },
+        ballonDarken: {
+          "0%": { opacity: 1 },
+          "100%": { opacity: 0.2 },
+        },
       },
       animation: {
         textAnimationRightArrow: "textAnimationRightArrow 0.5s forwards",
         textAnimationLeftArrow: "textAnimationLeftArrow 0.5s forwards",
+        ballonDarken: "ballonDarken 0.5s forwards",
       },
     },
   },

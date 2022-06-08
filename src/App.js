@@ -18,22 +18,30 @@ function App() {
     setPage(1);
   }
   if (page < 1) {
-    setPage(50);
+    setPage(9);
   }
 
   console.log(page);
 
   return (
-    <main className="app">
+    <main className={page === 1 ? "app" : "app-dark"}>
       <Navbar page={page} setPage={setPage} />
       <Arrows page={page} setPage={setPage} />
       <img
-        className="absolute w-28 bottom-0 left-20 balloon2"
+        className={
+          page === 1
+            ? "absolute w-28 bottom-0 left-20 balloon2"
+            : "absolute w-28 bottom-0 left-20 balloon2"
+        }
         src={Balloon}
         alt="balloon"
       />
       <img
-        className="absolute w-28 bottom-0 right-20 balloon hidden md:block"
+        className={
+          page === 1
+            ? "absolute w-28 bottom-0 right-20 balloon hidden md:block"
+            : "absolute w-28 bottom-0 right-20 balloon hidden md:block animate-ballonDarken"
+        }
         src={Balloon}
         alt="balloon"
       />
