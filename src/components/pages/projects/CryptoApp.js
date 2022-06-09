@@ -22,7 +22,7 @@ const CryptoApp = () => {
   }, [focus]);
 
   return (
-    <div className="w-11/12 lg:w-8/12 bg-white mt-12 mx-auto rounded-small">
+    <div className="w-11/12 lg:w-8/12 bg-white mt-12 mx-auto rounded-small flex flex-col justify-between">
       <h4 className="font-overpass text-main-header-color font-black text-4xl text-center pt-6">
         Crypto App
       </h4>
@@ -68,12 +68,24 @@ const CryptoApp = () => {
       <br className="hidden lg:block mb-2" />
       <br className="hidden lg:block mb-2" />
       <div className="flex justify-evenly mt-6 lg:mt-5">
-        <button className="w-34 h-10 mb-6 bg-black text-white font-bold font-overpass text-sm text-center">
-          Source Code
-        </button>
-        <button className="w-34 h-10 mb-6 bg-main-pink-color text-white font-bold font-overpass text-sm text-center">
-          View Demo
-        </button>
+        <a
+          href="https://github.com/etrafa/crypto-app"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button className="w-34 h-10 mb-6 bg-black text-white font-bold font-overpass text-sm text-center hover:bg-main-yellow-color hover:text-black">
+            Source Code
+          </button>
+        </a>
+        <a
+          href="https://etrafa.github.io/crypto-app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button className="w-34 h-10 mb-6 bg-main-pink-color text-white font-bold font-overpass text-sm text-center hover:bg-main-yellow-color hover:text-black">
+            View Demo
+          </button>
+        </a>
       </div>
     </div>
   );
