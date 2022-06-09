@@ -11,7 +11,7 @@ const Navbar = ({ page, setPage }) => {
         </h4>
       </div>
       {navbarOpen && (
-        <div className="w-full flex bg-black fixed top-0 left-0 justify-center">
+        <div className="w-full flex bg-black fixed top-0 left-0 justify-center z-50">
           <svg
             onClick={() => setNavbarOpen(false)}
             xmlns="http://www.w3.org/2000/svg"

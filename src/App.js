@@ -21,7 +21,12 @@ function App() {
     setPage(9);
   }
 
-  console.log(page);
+  const nextPageHandler = () => {
+    setPage((prev) => prev + 1);
+    setTimeout(() => {
+      setPage((prev) => prev + 1);
+    }, 3000);
+  };
 
   return (
     <main className={page === 1 ? "app" : "app-dark"}>
@@ -47,8 +52,8 @@ function App() {
       />
 
       <button
-        onClick={() => setPage(page + 1)}
-        className="w-12 h-12 bg-white rounded-large lg:hidden absolute bottom-4 left-1/2 right-1/2 transfrom -translate-x-1/2 "
+        onClick={nextPageHandler}
+        className="w-12 h-12 bg-white rounded-large lg:hidden absolute bottom-4 left-1/2 right-1/2 transfrom -translate-x-1/2 z-50"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
