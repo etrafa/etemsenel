@@ -1,6 +1,28 @@
 import { Animated } from "react-animated-css";
+import emailjs from "emailjs-com";
 
 const Contact = ({ page }) => {
+  const sendEmailHandler = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_bb59fs9",
+        "template_s9q0d1t",
+        e.target,
+        "PUeQmZQnpZGccvH3S"
+      )
+      .then(
+        () => {
+          alert("Thank you for contacting me!");
+        },
+        () => {
+          alert("An error happened. Please try again.");
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <div>
       {page === 9 && (
@@ -9,21 +31,30 @@ const Contact = ({ page }) => {
             <h3 className="text-3xl font-bold text-center font-metro text-main-pink-color">
               Contact
             </h3>
-            <form className="w-full md:w-8/12 lg:w-6/12 xl:w-4/12 md:mx-auto mt-12">
+            <form
+              onSubmit={sendEmailHandler}
+              className="w-full md:w-8/12 lg:w-6/12 xl:w-4/12 md:mx-auto mt-12"
+            >
               <input
                 className="w-11/12 h-12 block mx-auto my-6 bg-white rounded-smForContact placeholder:pl-2"
                 type="text"
+                name="name"
                 placeholder="Name"
+                required
               />
               <input
                 className="w-11/12 h-12 block mx-auto my-6 bg-white rounded-smForContact placeholder:pl-2"
-                type="text"
+                type="email"
+                name="email"
                 placeholder="Email"
+                required
               />
               <textarea
                 className="w-11/12 h-36 block mx-auto my-6 bg-white rounded-smForContact placeholder:p-2"
                 cols="30"
                 rows="10"
+                name="message"
+                required
                 placeholder="You can always say hi to me :)"
               ></textarea>
               <button className="w-24 h-9 bg-white hover:bg-main-pink-color hover:text-black border border-black font-overpass font-bold text-sm block ml-auto mx-6">
