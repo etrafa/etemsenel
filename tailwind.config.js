@@ -47,11 +47,16 @@ module.exports = {
           "0%": { opacity: 1 },
           "100%": { opacity: 0.2 },
         },
+        navAnimation: {
+          "0%": { left: "-200px" },
+          "100%": { left: 0 },
+        },
       },
       animation: {
         textAnimationRightArrow: "textAnimationRightArrow 0.5s forwards",
         textAnimationLeftArrow: "textAnimationLeftArrow 0.5s forwards",
         ballonDarken: "ballonDarken 0.5s forwards",
+        navAnimation: "navAnimation 0.5s forwards",
       },
     },
   },

@@ -1,7 +1,17 @@
 import { useState } from "react";
 
-const Navbar = ({ page, setPage }) => {
+const Navbar = ({ page, setPage, setDownKeyOpen }) => {
   const [navbarOpen, setNavbarOpen] = useState(false);
+
+  const openNavbarHandler = () => {
+    setNavbarOpen(true);
+    setDownKeyOpen(false);
+  };
+  const closeNavbarHandler = (num) => {
+    setNavbarOpen(false);
+    setDownKeyOpen(true);
+    setPage(num);
+  };
 
   return (
     <nav className="flex justify-between mx-10 pt-4">
@@ -11,9 +21,9 @@ const Navbar = ({ page, setPage }) => {
         </h4>
       </div>
       {navbarOpen && (
-        <div className="w-full flex bg-black fixed top-0 left-0 justify-center z-50">
+        <div className="w-full flex bg-black fixed top-0 left-0 justify-center z-50 animate-navAnimation">
           <svg
-            onClick={() => setNavbarOpen(false)}
+            onClick={closeNavbarHandler}
             xmlns="http://www.w3.org/2000/svg"
             className="h-8 w-8 text-white absolute right-4 top-6"
             fill="none"
@@ -29,25 +39,16 @@ const Navbar = ({ page, setPage }) => {
           </svg>
           <ul className="flex flex-col h-screen justify-evenly">
             <li>
-              <div
-                onClick={() => {
-                  setPage(1);
-                  setNavbarOpen(false);
-                }}
-              >
+              <div onClick={() => closeNavbarHandler(1)}>
                 <h4 className="font-bungee text-4xl cursor-pointer text-main-pink-color  text-center">
                   ES
                 </h4>
               </div>
             </li>
             <li
-              text-4xl
-              onClick={() => {
-                setPage(2);
-                setNavbarOpen(false);
-              }}
+              onClick={() => closeNavbarHandler(3)}
               className={
-                page === 2
+                page === 3
                   ? "mx-6 text-main-yellow-color hover:text-main-pink-color font-bold cursor-pointer text-4xl"
                   : "mx-6 text-white hover:text-main-pink-color font-bold cursor-pointer text-4xl"
               }
@@ -55,12 +56,9 @@ const Navbar = ({ page, setPage }) => {
               About
             </li>
             <li
-              onClick={() => {
-                setPage(3);
-                setNavbarOpen(false);
-              }}
+              onClick={() => closeNavbarHandler(5)}
               className={
-                page === 3
+                page === 5
                   ? "mx-6 text-main-yellow-color hover:text-main-pink-color font-bold cursor-pointer text-4xl"
                   : "mx-6 text-white hover:text-main-pink-color font-bold cursor-pointer text-4xl"
               }
@@ -68,12 +66,9 @@ const Navbar = ({ page, setPage }) => {
               Skills
             </li>
             <li
-              onClick={() => {
-                setPage(4);
-                setNavbarOpen(false);
-              }}
+              onClick={() => closeNavbarHandler(7)}
               className={
-                page === 4
+                page === 7
                   ? "mx-6 text-main-yellow-color hover:text-main-pink-color font-bold cursor-pointer text-4xl"
                   : "mx-6 text-white hover:text-main-pink-color font-bold cursor-pointer text-4xl"
               }
@@ -81,12 +76,9 @@ const Navbar = ({ page, setPage }) => {
               Projects
             </li>
             <li
-              onClick={() => {
-                setPage(5);
-                setNavbarOpen(false);
-              }}
+              onClick={() => closeNavbarHandler(9)}
               className={
-                page === 5
+                page === 9
                   ? "mx-6 text-main-yellow-color hover:text-main-pink-color font-bold cursor-pointer text-4xl"
                   : "mx-6 text-white hover:text-main-pink-color font-bold cursor-pointer text-4xl"
               }
@@ -98,7 +90,7 @@ const Navbar = ({ page, setPage }) => {
       )}
       <div className="lg:hidden text-white cursor-pointer hover:text-main-pink-color">
         <svg
-          onClick={() => setNavbarOpen(true)}
+          onClick={openNavbarHandler}
           xmlns="http://www.w3.org/2000/svg"
           className="h-10 w-10"
           viewBox="0 0 24 24"
