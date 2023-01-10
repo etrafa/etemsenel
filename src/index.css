@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Overpass:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: metro;
+  src: url(assets/fonts/Metro.otf);
+}
+
+@font-face {
+  font-family: nerko;
+  src: url(assets/fonts/Nerko.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url(./assets/background-big.png);
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
+  position: relative;
+  z-index: 9999999;
+}
+
+.app-dark {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url(./assets/background-big.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
+  min-height: 100vh;
+  position: relative;
+  z-index: 9999999;
+  animation: backgroundDarken 0.6s linear forwards;
+}
+
+@keyframes backgroundDarken {
+  0% {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+      url(./assets/background-big.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+  20% {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(./assets/background-big.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+  40% {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(./assets/background-big.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+  60% {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(./assets/background-big.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+  80% {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url(./assets/background-big.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+  100% {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+      url(./assets/background-big.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+}
+
+.balloon {
+  animation: ballonAnimation 40s linear infinite;
+  animation-fill-mode: forwards;
+  z-index: -1;
+  position: absolute;
+  width: 7rem;
+  bottom: 0;
+  right: 5rem;
+}
+
+.balloon1-dark {
+  animation: ballonAnimation 40s linear infinite;
+  animation-fill-mode: forwards;
+  z-index: -1;
+  position: absolute;
+  width: 7rem;
+  bottom: 0;
+  right: 5rem;
+  opacity: 0.2;
+}
+
+.balloon2 {
+  max-width: 7rem;
+  position: absolute;
+  bottom: 0rem;
+  left: -20rem;
+  z-index: -1;
+  animation: ballonAnimation2 40s linear infinite;
+  animation-fill-mode: forwards;
+  animation-delay: 6s;
+}
+
+.balloon2-dark {
+  animation: ballonAnimation2 40s linear infinite;
+  animation-fill-mode: forwards;
+  animation-delay: 4;
+  opacity: 0.2;
+  z-index: -1;
+  position: absolute;
+  width: 7rem;
+  bottom: 0;
+  left: 5rem;
+}
+
+@keyframes ballonAnimation {
+  from {
+    bottom: 0%;
+  }
+  to {
+    bottom: 100%;
+  }
+}
+@keyframes ballonAnimation2 {
+  from {
+    bottom: 0%;
+    left: 10%;
+  }
+  to {
+    bottom: 100%;
+    left: 40%;
+  }
+}
