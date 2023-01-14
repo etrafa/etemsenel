@@ -8,13 +8,14 @@ module.exports = {
       xl: "1200px",
       "2xl": "1500px",
     },
-    borderRadius: {
-      large: "2.4rem",
-      small: "24px",
-      extraSm: "20px",
-      smForContact: "6px",
-    },
+
     extend: {
+      borderRadius: {
+        large: "2.4rem",
+        small: "24px",
+        extraSm: "20px",
+        smForContact: "6px",
+      },
       lineHeight: {
         34: "34px",
       },
@@ -52,12 +53,20 @@ module.exports = {
           "0%": { left: "-200px" },
           "100%": { left: 0 },
         },
+        shakeAnimation: {
+          "0%": { left: "-8px" },
+          "5%": { left: 0 },
+          "10%": { left: "-8px" },
+          "15%": { left: 0 },
+          "100%": { left: 0 },
+        },
       },
       animation: {
         textAnimationRightArrow: "textAnimationRightArrow 0.5s forwards",
         textAnimationLeftArrow: "textAnimationLeftArrow 0.5s forwards",
         ballonDarken: "ballonDarken 0.5s forwards",
         navAnimation: "navAnimation 0.5s forwards",
+        shakeAnimation: "shakeAnimation 3s infinite",
       },
     },
   },

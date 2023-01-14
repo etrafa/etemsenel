@@ -56,7 +56,7 @@ const ProjectsProps = (props) => {
           />
 
           <Project
-            projectName="E-Commerce App"
+            projectName="Shopify App"
             technologies={[
               "React",
               "Tailwind",
@@ -114,12 +114,6 @@ const ProjectsProps = (props) => {
             sourceCode="https://github.com/etrafa/spin-trivia"
             demoLink="https://etrafa.github.io/spin-trivia/"
           />
-
-          {/* <CryptoApp />
-          <BugTracker />
-          <TshirtApp />
-          <RetinaApp />
-          <SpinGame /> */}
         </div>
       </section>
     </Animated>
