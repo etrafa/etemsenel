@@ -27,6 +27,8 @@ const Project = (props) => {
     }
   }, [focus]);
 
+  console.log(props.projectVideo);
+
   return (
     <div className="w-11/12 lg:w-9/12 max-w-[35rem] mt-12 mx-auto relative bg-white min-h-[504px] max-h-[504px] hover:min-h-[600px] rounded-t-xl group ">
       <section className="border-b-[3px] border-black h-8 bg-[#9CD9C5] rounded-t-xl">

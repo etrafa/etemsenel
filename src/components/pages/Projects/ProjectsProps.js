@@ -3,15 +3,15 @@ import Project from "./my-projects/Project";
 
 // assets
 import cryptoImage from "../../../assets/works/cryptoImage.png";
-import cryptoVideo from "../../../assets/works/cryptoVideo.mov";
+import cryptoVideo from "../../../assets/works/cryptoVideo.mp4";
 import bugTrackerImage from "../../../assets/works/bugTrackerImage.png";
-import bugTrackerVideo from "../../../assets/works/bugTrackerVideo.mov";
+import bugTrackerVideo from "../../../assets/works/bugTrackerVideo.mp4";
 import eCommerceImage from "../../../assets/works/eCommerceImage.png";
-import eCommerceVideo from "../../../assets/works/eCommerceVideo.mov";
+import eCommerceVideo from "../../../assets/works/eCommerceVideo.mp4";
 import retinaImage from "../../../assets/works/retinaImage.png";
-import retinaVideo from "../../../assets/works/retinaVideo.mov";
+import retinaVideo from "../../../assets/works/retinaVideo.mp4";
 import triviaImage from "../../../assets/works/triviaGameImage.png";
-import triviaVideo from "../../../assets/works/triviaGameVideo.mov";
+import triviaVideo from "../../../assets/works/triviaGameVideo.mp4";
 
 const ProjectsProps = (props) => {
   return (
