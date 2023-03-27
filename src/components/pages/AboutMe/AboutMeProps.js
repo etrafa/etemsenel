@@ -1,4 +1,4 @@
-import myCV from "../../../assets/etemsenel-cv.pdf";
+//import myCV from "../../../assets/etemsenel-cv.pdf";
 import { Animated } from "react-animated-css";
 
 const AboutMeProps = (props) => {
@@ -38,7 +38,11 @@ const AboutMeProps = (props) => {
           </p>
         </article>
         <div className="block mx-auto w-full text-center">
-          <a href={myCV} download="etemsenel-cv">
+          <a
+            href="https://drive.google.com/file/d/18LEIcvHsADYLrOb7akkc6aK4mpaak4Et/view"
+            target="_blank"
+            rel="noreferrer"
+          >
             <button className="text-black bg-main-yellow-color font-medium rounded-lg text-sm px-5 mt-12 lg:mt-0 py-2.5 text-center inline-flex items-center mb-2 hover:bg-white">
               My Resume
               <svg

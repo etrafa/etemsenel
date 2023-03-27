@@ -50,7 +50,7 @@ const ProjectsProps = (props) => {
             ]}
             projectImage={bugTrackerImage}
             projectVideo={bugTrackerVideo}
-            projectDescription="empty for now."
+            projectDescription="Bug Tracker is a web-based application that allows teams to track software bugs and issues. It provides a centralized platform for team members to report, track, and manage bugs throughout the development process. The application enables team members to assign bugs to specific team members, track bug statuses, prioritize bugs, and communicate with each other on specific bug threads."
             sourceCode="https://github.com/etrafa/bug-tracker-typescript"
             demoLink="https://bug-tracker-el.vercel.app/"
           />
